@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+}
+
+/*div{
+	outline: 1px solid red;*/
+}
+
+header .logo, header .slogan{
+	display: inline-block;
+}
+
+header .logo{
+	width: auto;
+	background: url(../img/1.jpg);
+	width: 100%;
+	height: 160px;
+	background-size: cover;
+}
+
+header .slogan{
+	width: 100%;
+	text-align: center;
+	vertical-align: middle; 
+	font-size: 60px;
+	color: #FFFFFF;
+}
+header :hover{
+	color: pink;
+}	
+
+header .slogan-mobile{
+	display: none;
+}
+
+header .slogan-medium{
+	display: none;
+	text-align: center;
+}
+
+
+/*aside .margine{ 
+	font-size:30px;*/
+} 
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	
+}
+
+nav ul li{
+	outline: 1px solid green;
+	display: inline-block;
+	width: 25%;
+	font-size: 20px;
+	padding: 0;
+}
+nav ul li:hover{
+	background: lightblue;
+	color: blue ;
+}
+section article{
+	background: lightgray;
+	margin-bottom: 5px;
+}
+
+section article figure{
+	float: left;
+}
+
+section article header{
+	font-size: 25px;
+}
+
+section article:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+footer {
+    height: 141px;
+    background: #78bf23;
+    width: 100%;
+}
+
+@media screen and (max-width: 620px) and (min-width: 401px){
+	header .slogan-medium{
+		display: inline-block;	
+		text-align: center;
+		font-size: 40px;	
+	}
+	header .slogan{
+		display: none
+	}
+}
+
+@media screen and (max-width: 400px){
+	header .slogan{
+		display: none;
+	}
+	header .slogan-mobile{
+		display: block;
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	nav ul li{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	header .logo{
+		width: 100%;
+	}
+
+	section article figure, section article figure img{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+
+@media print{
+	header{
+		display: none;
+	}
+	nav{
+		display: none;
+	}
+}
